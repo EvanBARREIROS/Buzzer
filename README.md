@@ -1,55 +1,67 @@
-# 🔴 Buzzer
-
-**Buzzer** est une application mobile Flutter qui te permet de buzzer seul ou en multijoueur en temps réel. Simple, rapide, et fun — que ce soit pour un quiz entre amis, en classe ou en soirée.
-
----
-
-## 📱 Fonctionnalités actuelles
-
-### Mode solo
-- Grand bouton buzzer avec son intégré
-- **Personnalisation complète** :
-  - Couleur de fond personnalisable
-  - Image de fond depuis ta galerie
-  - Couleur et taille du bouton
-  - Son personnalisé depuis tes fichiers
-
-### Mode multijoueur (en ligne)
-- Créer une salle avec un **code à 6 caractères** partageable
-- Rejoindre une salle existante via le code
-- Lobby d'attente avec liste des joueurs connectés
-- Buzz en temps réel — **seul le premier compte**, géré par transaction Firebase pour éviter les doublons
-- L'hôte peut relancer la manche ou fermer la salle
-- Affichage du gagnant instantané pour tous les joueurs
+<div align="center">
+  <img src="assets/images/Buzzer.png" alt="Buzzer Logo" width="120"/>
+  
+  # ⚡ Buzzer
+  
+  **L'application de jeu de buzzer multijoueur en temps réel**
+  
+  ![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter)
+  ![Firebase](https://img.shields.io/badge/Firebase-Realtime%20DB-orange?logo=firebase)
+  ![Version](https://img.shields.io/badge/version-3.1.0-purple)
+  ![Platform](https://img.shields.io/badge/platform-Android-green?logo=android)
+</div>
 
 ---
 
-## 🔮 Fonctionnalités à venir
+## 📱 C'est quoi Buzzer ?
 
-### 🎨 Personnalisation avancée *(Solo)*
-- [ ] Thèmes prédéfinis (néon, rétro, minimaliste…)
-- [ ] Animations personnalisées au buzz
-- [ ] Effets sonores supplémentaires intégrés
-
-### 🌐 Personnalisation en salle *(Multijoueur)*
-> Ces options seront disponibles en mode en ligne, débloquées via l'une des deux formules suivantes :
-
-#### 💰 Modèle de monétisation envisagé
-
-**Fonctionnement :**
-- [ ] Une pub s'affiche à la **création d'une salle**
-- [ ] Une pub s'affiche au **moment de rejoindre une salle**
-- [ ] Pas de pub pendant la partie elle-même
-
-**Option premium (1-2 €) — achat unique**
-Supprime les pubs + débloque toutes les options de personnalisation en salle :
-- [ ] Fond d'écran personnalisé visible par tous les joueurs
-- [ ] Couleur et skin du bouton partagés
-- [ ] Son de buzz personnalisé diffusé à tous
-- [ ] Pseudo stylisé (badges, couleurs)
+Buzzer est une application Android multijoueur qui transforme n'importe quelle soirée en jeu de quiz interactif. Crée une partie, invite tes amis avec un code, et que le meilleur gagne !
 
 ---
 
-## 👤 Auteur
+## 🎮 Modes de jeu
 
-Fait par **Evan**
+| Mode | Description |
+|------|-------------|
+| ⚡ **Classique** | Premier à buzzer remporte le point |
+| ⏱️ **Chrono caché** | Le chrono tourne en secret, timing parfait requis |
+| 🌀 **Crazy Countdown** | Compte à rebours avec des règles qui changent |
+| ❓ **Questions / Réponses** | Quiz en équipe avec validation par l'hôte |
+
+---
+
+## ✨ Fonctionnalités
+
+- 🔴 **Buzzer en temps réel** via Firebase Realtime Database
+- 👥 **Multijoueur** — jusqu'à plusieurs joueurs dans la même partie
+- 🏠 **Lobby** — rejoins une partie avec un code à 6 caractères
+- 🧑‍🎤 **Avatars personnalisés** — 16 personnages au choix, sauvegardés localement
+- 👫 **Système d'amis** — ajoute des amis, vois qui est en ligne
+- 🔊 **Effets sonores** — sons de buzz et de victoire
+- 📊 **Scores en direct** — classement mis à jour en temps réel
+
+---
+
+## ❓ Mode Questions / Réponses
+
+Le mode QnA est le plus complet de l'application :
+
+- **6 listes prêtes à jouer** : Culture générale, Science, Sport, Cinéma & Séries, Histoire, Géographie
+- **🤖 Génération IA** : entre un thème libre (*Harry Potter, la cuisine française, les années 90...*) et l'IA génère 10 questions instantanément
+- **🙈 Anti-triche** : la question disparaît dès qu'un joueur buzz, impossible de lire la réponse avant de répondre
+- **✏️ Liste personnalisée** : crée tes propres questions/réponses
+- **🎙️ Saisie manuelle** : pose tes questions à la volée
+- **🔒 Réponse visible uniquement par l'hôte** pour valider ou invalider
+
+---
+
+## 🚀 Installation
+
+### Télécharger l'APK
+👉 [Dernière release](../../releases/latest) — télécharge le fichier `.apk` et installe-le sur ton Android.
+
+> Active **"Sources inconnues"** dans les paramètres de sécurité de ton téléphone si besoin.
+
+### Compiler depuis les sources
+
+```bash
