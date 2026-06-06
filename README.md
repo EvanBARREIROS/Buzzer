@@ -64,4 +64,14 @@ Le mode QnA est le plus complet de l'application :
 
 ### Compiler depuis les sources
 
-```bash
+---
+
+## 👤 Auteur
+
+Développé par **Evan** — projet personnel Flutter.
+
+---
+
+<div align="center">
+  <sub>Fait avec ❤️ et Flutter</sub>
+</div>
