@@ -1,77 +1,42 @@
-<div align="center">
-  <img src="assets/images/Buzzer.png" alt="Buzzer Logo" width="120"/>
-  
-  # ⚡ Buzzer
-  
-  **L'application de jeu de buzzer multijoueur en temps réel**
-  
-  ![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter)
-  ![Firebase](https://img.shields.io/badge/Firebase-Realtime%20DB-orange?logo=firebase)
-  ![Version](https://img.shields.io/badge/version-3.1.0-purple)
-  ![Platform](https://img.shields.io/badge/platform-Android-green?logo=android)
-</div>
+# 📋 Politique de confidentialité de Buzzer
+*Dernière mise à jour : juin 2026*
 
----
+Buzzer ("l'application") est développée par Evan ("le développeur"). Cette politique explique quelles données sont collectées lors de l'utilisation de l'application et comment elles sont traitées.
 
-## 📱 C'est quoi Buzzer ?
+## 1️⃣ Données collectées
+L'application collecte les données suivantes :
+- **Pseudo et identifiant utilisateur** : généré via Firebase Authentication (connexion anonyme automatique, aucun email ni mot de passe requis)
+- **Données de jeu** : pseudo, tag, avatar choisi, liste d'amis, scores et historique de parties, stockés via Firebase Realtime Database
+- **Messages** : les messages échangés dans le chat de partie sont stockés temporairement le temps de la session de jeu
+- **Historique d'achat** : si vous achetez "Buzzer+", la transaction est traitée par Google Play Billing puis vérifiée par notre fonction serveur sécurisée (Supabase) pour activer le contenu débloqué
+- **Identifiants publicitaires et données de diagnostic** : collectés par Google AdMob pour l'affichage de publicités et la prévention de la fraude
 
-Buzzer est une application Android multijoueur qui transforme n'importe quelle soirée en jeu de quiz interactif. Crée une partie, invite tes amis avec un code, et que le meilleur gagne !
+## 2️⃣ Utilisation des données
+Ces données sont utilisées exclusivement pour :
+- Faire fonctionner les fonctionnalités de jeu (parties, amis, scores)
+- Activer le contenu premium après vérification d'un achat légitime
+- Afficher des publicités via Google AdMob et prévenir la fraude publicitaire
 
----
+**Nous ne vendons aucune donnée personnelle à des tiers.**
 
-## 🎮 Modes de jeu
+## 3️⃣ Partage des données avec des tiers
+Certaines données sont partagées avec les prestataires suivants, nécessaires au fonctionnement de l'application :
+- **Google Firebase** (authentification et base de données)
+- **Google AdMob** (affichage de publicités, identifiant publicitaire, diagnostics)
+- **Google Play Billing** (traitement des achats intégrés)
+- **Supabase** (vérification serveur des achats)
 
-| Mode | Description |
-|------|-------------|
-| ⚡ **Classique** | Premier à buzzer remporte le point |
-| ⏱️ **Chrono caché** | Le chrono tourne en secret, timing parfait requis |
-| 🌀 **Crazy Countdown** | Compte à rebours avec des règles qui changent |
-| ❓ **Questions / Réponses** | Quiz en équipe avec validation par l'hôte |
+## 4️⃣ Conservation et suppression des données
+Les données sont conservées tant que votre profil existe. Pour demander la suppression de vos données personnelles, contactez le développeur (voir section 8) : nous traiterons votre demande dans un délai raisonnable.
 
----
+## 5️⃣ Sécurité
+Toutes les données transitent de manière chiffrée (TLS) entre l'application et nos serveurs.
 
-## ✨ Fonctionnalités
+## 6️⃣ Enfants
+Buzzer n'est pas spécifiquement destinée aux enfants de moins de 13 ans et ne collecte pas sciemment de données auprès de ce public.
 
-- 🔴 **Buzzer en temps réel** via Firebase Realtime Database
-- 👥 **Multijoueur** — jusqu'à plusieurs joueurs dans la même partie
-- 🏠 **Lobby** — rejoins une partie avec un code à 6 caractères
-- 🧑‍🎤 **Avatars personnalisés** — 16 personnages au choix, sauvegardés localement
-- 👫 **Système d'amis** — ajoute des amis, vois qui est en ligne
-- 🔊 **Effets sonores** — sons de buzz et de victoire
-- 📊 **Scores en direct** — classement mis à jour en temps réel
+## 7️⃣ Modifications de cette politique
+Cette politique peut être mise à jour. Toute modification importante sera reflétée sur cette page avec une nouvelle date de mise à jour.
 
----
-
-## ❓ Mode Questions / Réponses
-
-Le mode QnA est le plus complet de l'application :
-
-- **6 listes prêtes à jouer** : Culture générale, Science, Sport, Cinéma & Séries, Histoire, Géographie
-- **🤖 Génération IA** : entre un thème libre (*Harry Potter, la cuisine française, les années 90...*) et l'IA génère 10 questions instantanément
-- **🙈 Anti-triche** : la question disparaît dès qu'un joueur buzz, impossible de lire la réponse avant de répondre
-- **✏️ Liste personnalisée** : crée tes propres questions/réponses
-- **🎙️ Saisie manuelle** : pose tes questions à la volée
-- **🔒 Réponse visible uniquement par l'hôte** pour valider ou invalider
-
----
-
-## 🚀 Installation
-
-### Télécharger l'APK
-👉 [Dernière release](../../releases/latest) — télécharge le fichier `.apk` et installe-le sur ton Android.
-
-> Active **"Sources inconnues"** dans les paramètres de sécurité de ton téléphone si besoin.
-
-### Compiler depuis les sources
-
----
-
-## 👤 Auteur
-
-Développé par **Evan** — projet personnel Flutter.
-
----
-
-<div align="center">
-  <sub>Fait avec ❤️ et Flutter</sub>
-</div>
+## 8️⃣ Contact
+Pour toute question relative à cette politique ou à vos données, contactez : **Evan.BARREIROS.pro@gmail.com**
