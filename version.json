@@ -1,4 +1,6 @@
 {
   "version": "3.0.1",
-  "update": true
+  "update": false,
+  "message": "Une nouvelle version corrige plusieurs bugs et ajoute des fonctionnalités.",
+  "update_url": "https://play.google.com/store/apps/details?id=TON_PACKAGE_ID"
 }
